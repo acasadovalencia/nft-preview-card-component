@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;600&display=swap');
+:root{
+    --outfit-font: 'Outfit', sans-serif;
+    --soft-blue-color: hsl(215, 51%, 70%);
+    --cyan-color:hsl(178, 100%, 50%);
+    --cyan-color-alpha:hsla(178, 100%, 50%, 0.53);
+    --dark-blue-main-bg-color: hsl(217, 54%, 11%);
+    --dark-blue-card-bg-color:hsl(216, 50%, 16%);
+    --dark-blue-line-color:hsl(215, 32%, 27%);
+    --white-color: #FFF;
+    font-size: 62.5%;
+}
+body{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.6rem;
+    background-color: var(--dark-blue-main-bg-color);
+    display: flex;
+    font-family: var(--outfit-font);
+    color: var(--white-color);
+}
+main{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+
+}
+.card{
+    width: 35rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    display: flex;
+    background-color: var(--dark-blue-card-bg-color);    
+}
+.card__img{
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.img__link:active{
+    background-image: url(/images/icon-view.svg);
+    z-index: 100;
+    background-color: var(--cyan-color-alpha) ;
+    border-radius: 1rem;
+}
+.heading-1{
+    font-weight: 600;
+    margin: 1.5rem 0;
+    cursor: pointer;
+}
+.heading-1:active{
+    color: var(--cyan-color);
+}
+.paragraph{
+    font-size: 1.8rem;
+    font-weight: 100;
+
+}
+.card__status{
+    font-size: 1.6rem;
+    padding: 0;
+    margin: 1rem 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+.coin__status{
+    width: 50%;
+    font-size: 1.4rem;
+    color: var(--cyan-color);
+    text-align: left;
+    left: 0;
+
+}
+.day__status{
+    width: 50%;
+    font-size: 1.4rem;
+    color: var(--soft-blue-color);
+    text-align: right;
+}
+hr{
+    color: var(--dark-blue-line-color);
+    border: solid 1px;
+}
+.card__footer{
+    display: flex;
+    padding: 1rem;
+}
+.avatar__img{
+    width: 3rem;
+    justify-content: center;
+
+}
+.footer__text{
+    padding: 0 2rem;
+    justify-content: center;
+    text-align: center;
+}
+.grey-car{
+    color: var(--soft-blue-color);
+}
+.active__car{
+    cursor: pointer;
+}
+.active__car:active{
+    color: var(--cyan-color);
+}
+.attribution { 
+    font-size: 11px;
+    text-align: center; 
+    position: absolute;
+    bottom: 0;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+
